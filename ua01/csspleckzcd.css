@@ -1,0 +1,215 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+/* Styling header */
+header {
+  background-color: #fca212;
+  color: #333;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Styling banner di header */
+.banner {
+  margin-top: 1rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.banner img {
+  max-width: 100%;
+  height: auto;
+}
+/* Styling untuk link di gallery */
+.gallery-link {
+  display: block;
+  text-decoration: none;
+  transition: transform 0.3s; /* Efek hover */
+}
+.gallery-link:hover {
+  transform: scale(1.05); /* Sedikit zoom saat hover */
+}
+
+/* Styling untuk slideshow di gallery-detail */
+.slideshow {
+  text-align: center;
+  margin: 2rem 0;
+}
+.slideshow img {
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.slideshow button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #ffcc00;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.slideshow p {
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+/* Sisanya tetap sama */
+
+/* Responsivitas untuk mobile */
+@media (max-width: 768px) {
+  .banner img {
+    height: 150px; /* Sesuaikan tinggi banner di mobile */
+  }
+}
+
+/* Sisanya tetap sama */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+main {
+  padding: 2rem;
+}
+.card, .banner, .products, .gallery {
+  background: white;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.product-card {
+  display: inline-block;
+  width: 45%;
+  margin: 1rem;
+  text-align: center;
+}
+/* Styling untuk gambar produk di card */
+.product-card img {
+  width: 250px;         
+  height: auto;          
+  max-width: 100%;       
+  object-fit: cover;     
+  border-radius: 8px;   
+  margin-bottom: 1rem;   
+}
+/* Styling untuk gambar produk di card - ukuran seragam dan lebih kecil */
+.product-card img {
+  width: 150px;          /* Lebar seragam 150px (lebih kecil dari sebelumnya; sesuaikan angka jika perlu) */
+  height: 150px;         /* Tinggi seragam 150px untuk bentuk persegi (atau auto jika ingin proporsional) */
+  object-fit: cover;     /* Potong gambar agar pas ukuran tanpa distorsi; coba 'contain' jika ingin gambar penuh */
+  border-radius: 8px;    /* Opsional: Sudut bulat untuk estetika */
+  margin-bottom: 1rem;   /* Jarak bawah gambar */
+}
+
+/* Responsivitas: Ukuran lebih kecil di mobile */
+@media (max-width: 768px) {
+  .product-card img {
+    width: 120px;        /* Lebih kecil di mobile untuk layar sempit */
+    height: 120px;
+  }
+}
+/* Styling untuk product card */
+.product-card {
+  text-align: center;  /* Center semua elemen di card */
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 1rem;
+}
+
+/* Pastikan tombol di bawah harga */
+.product-card button {
+  margin-top: 0.5rem;  /* Jarak atas tombol dari elemen sebelumnya (harga) */
+  display: block;      /* Buat tombol block agar penuh lebar dan di bawah */
+  width: 100%;         /* Opsional: Tombol penuh lebar */
+  padding: 0.5rem;
+  background-color: #ffcc00;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+/* Responsivitas: Ukuran berbeda di layar kecil */
+@media (max-width: 768px) {
+  .product-card img {
+    width: 150px;        /* Lebih kecil di mobile */
+  }
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-top: 1rem;
+}
+input, textarea {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #ffcc00;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  justify-items: center;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+h1{
+text-align: center;
+
+}
+h2{
+  text-align: center;
+  
+}
+p{
+  text-align: justify;
+  
+}
+p2{
+  text-align: center;
+}
+p1{
+  text-align: center;
+}
+.gallery {
+  display: block; 
+}
+.gallery-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-grid img {
+  width: 400px;  
+  height: auto;
+}
+.gallery-link {
+  display: inline-block;
+}
+
+.gallery-grid img {
+  border-radius: 8px;
+}

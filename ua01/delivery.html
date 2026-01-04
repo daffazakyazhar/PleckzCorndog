@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Pleckz Corndog - Delivery</title>
+ <link rel="stylesheet" href="csspleckzcd.css">
+</head>
+<body>
+ <header>
+<section class="banner">
+  <img src="gambar/Corn dog logo with cheese illustration _ Premium Vector.png" alt="Banner Pleckz Corndog" style="width:100%; height:auto;">
+ </section>
+ <h1>Pleckz Corndog</h1>
+ <nav>
+  <ul>
+   <li><a href="index.html">Home</a></li>
+   <li><a href="about.html">About</a></li>
+   <li><a href="gallery.html">Gallery</a></li>
+   <li><a href="delivery.html">Delivery</a></li>
+  </ul>
+ </nav>
+</header>
+ <main>
+  <section class="card">
+   <h2>Pesan Delivery Pleckz Corndog</h2>
+   <form action="#" method="post" id="delivery-form">
+    <label for="name">Nama Lengkap:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="phone">Nomor Telepon:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="address">Alamat Lengkap:</label>
+    <textarea id="address" name="address" required></textarea>
+
+    
+    <label for="order">Pesanan (contoh: 2 Corndog Original, 1 Cheese):</label>
+    <textarea id="order" name="order" required></textarea>
+    
+    <label for="notes">Catatan Tambahan:</label>
+    <textarea id="notes" name="notes"></textarea>
+    
+    <button type="submit" onclick="submitForm()">Kirim Pesanan</button>
+   </form>
+  </section>
+ </main>
+ <footer>
+  <p2>© 2025 Pleckz Corndog - DAFFA ZAKY AZHAR, 251011700217, 01SIFP0004</p2>
+ </footer>
+ <script src="script.js"></script>
+</body>
+</html>
